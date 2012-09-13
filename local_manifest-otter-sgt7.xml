@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
 
-  <remote  name="omapzoom"
-           fetch="git://git.omapzoom.org/" />
+  <remote  name="omapzoom" fetch="git://git.omapzoom.org/" />
+  <remote fetch="git://cmdev/" name="cmdev" />
 
   <!-- CM removals -->
   <remove-project name="CyanogenMod/android_hardware_libhardware" />
@@ -27,11 +27,10 @@
   <project path="system/core" name="KFire-Android/android_system_core" revision="jellybean" />
 
   <!-- local projects -->
-  <project path="device/amazon/otter" name="KFire-Android/device-amazon-otter" revision="jb" />
+  <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
   <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" revision="4AI1.7" />
   <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
     
-    <remote fetch="git://cmdev/" name="cmdev" />
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="jb" />
 
@@ -39,8 +38,12 @@
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb" />
+    <project path="frameworks/base" name="sgt7/android_frameworks_base" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
+
+    <!-- custom
+    <remove-project name="CyanogenMod/android_bionic" />
+    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="jb-linaro" /> -->
 
   </manifest>

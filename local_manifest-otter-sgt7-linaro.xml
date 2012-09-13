@@ -9,7 +9,7 @@
     <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
 
     <!-- local projects -->
-    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
+    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb-linaro" />
     <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" revision="4AI1.7" />
     <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
 
@@ -25,7 +25,7 @@
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb-sgt7" />
+    <project path="frameworks/base" name="sgt7/android_frameworks_base" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
 
