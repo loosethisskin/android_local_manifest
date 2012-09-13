@@ -12,22 +12,18 @@
     <project path="packages/apps/Bazinga" name="sgt7/android_packages_apps_Bazinga" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="u01/dev/android/git/sgt7/android_frameworks_base" remote="cmdev" revision="ics-sgt7-linaro-tweaks" />
+    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="ics-sgt7-linaro-tweaks" />
 
-    <project path="vendor/cm" name="u01/dev/android/git/sgt7/android_vendor_cm" remote="cmdev" revision="ics" />
+    <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="ics-sgt7" />
 
-    <project path="kernel/amazon/otter" name="u01/dev/android/git/otter/kernel_omap" remote="cmdev" revision="4AI.5" />
-    <project path="device/amazon/otter" name="u01/dev/android/git/otter/device-amazon-otter" remote="cmdev" revision="ics-linaro-tweaks" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI.5" />
+    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="ics-linaro-tweaks" />
     <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" remote="github" revision="ics" />
-
-    <project path="device/samsung/p4wifi" name="pershoot/android_device_samsung_p4wifi" revision="ics" />
-    <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="ics" />
-    <project path="device/samsung/p4-common" name="pershoot/android_device_samsung_p4-common" remote="github" revision="ics" />
 
     <!-- linaro -->
     <remove-project name="CyanogenMod/android_build" />
 
-    <project path="build" name="u01/dev/android/git/otter/android_build" remote="cmdev" revision="ics-linaro-full" >
+    <project path="build" name="otter/android_build" remote="cmdev" revision="ics-linaro-full" >
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 
@@ -35,7 +31,7 @@
     <project path="prebuilt" name="loosethisskin/android_prebuilt" remote="github" revision="ics-linaro" />
 
     <remove-project name="CyanogenMod/android_bionic" />
-    <project path="bionic" name="u01/dev/android/git/linaro/android_bionic" remote="cmdev" revision="ics-linaro" />
+    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="ics-linaro" />
 
     <!-- libjpeg-turbo fixes the netd restarting issue when TARGET_TOOLS_PREFIX set to linaro -->
     <remove-project name="CyanogenMod/android_external_jpeg" />
@@ -48,20 +44,20 @@
     <remove-project name="CyanogenMod/android_external_openvpn" />
     <remove-project name="CyanogenMod/android_external_webkit" />
     <remove-project name="platform/hardware/ti/omap4xxx" />
-    <project path="external/busybox" name="u01/dev/android/git/linaro/android_external_busybox" remote="cmdev" revision="ics-linaro" />
-    <project path="external/e2fsprogs" name="u01/dev/android/git/linaro/android_external_e2fsprogs" remote="cmdev" revision="ics-linaro" />
-    <project path="external/lsof" name="u01/dev/android/git/linaro/android_external_lsof" remote="cmdev" revision="ics-linaro" />
-    <project path="external/openvpn" name="u01/dev/android/git/linaro/android_external_openvpn" remote="cmdev" revision="ics-linaro" />
-    <project path="external/webkit" name="u01/dev/android/git/linaro/android_external_webkit" remote="cmdev" revision="ics-linaro" />
-    <project path="hardware/ti/omap4xxx" name="u01/dev/android/git/linaro/hardware_ti_omap4xxx" remote="cmdev" revision="ics-linaro" />
+    <project path="external/busybox" name="linaro/android_external_busybox" remote="cmdev" revision="ics-linaro" />
+    <project path="external/e2fsprogs" name="linaro/android_external_e2fsprogs" remote="cmdev" revision="ics-linaro" />
+    <project path="external/lsof" name="loosethisskin/android_external_lsof" revision="ics-linaro" />
+    <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="ics-linaro" />
+    <project path="external/webkit" name="linaro/android_external_webkit" remote="cmdev" revision="ics-linaro" />
+    <project path="hardware/ti/omap4xxx" name="loosethisskin/hardware_ti_omap4xxx" revision="ics-linaro" />
 
     <!-- fix for netflix/youtube thumbnail not showing issue - Change to -O2 if we're building with -O3 -->
     <remove-project name="CyanogenMod/android_external_skia" />
-    <project path="external/skia" name="u01/dev/android/git/linaro/android_external_skia" remote="cmdev" revision="ics-linaro" />
+    <project path="external/skia" name="linaro/android_external_skia" remote="cmdev" revision="ics-linaro" />
 
     <!-- fix linaro compiler segfault when -fmodulo-sched is enabled -->
     <remove-project name="CyanogenMod/android_external_tremolo" />
-    <project path="external/tremolo" name="u01/dev/android/git/linaro/android_external_tremolo" remote="cmdev" revision="ics-linaro" />
+    <project path="external/tremolo" name="linaro/android_external_tremolo" remote="cmdev" revision="ics-linaro" />
 
     <!-- fix compile errors -->
     <remove-project name="CyanogenMod/android_packages_apps_Phone" />
