@@ -9,8 +9,8 @@
     <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
 
     <!-- local projects -->
-    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb-linaro" />
-    <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" revision="4AI1.7" />
+    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI1.7-dev" />
     <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
 
     <remove-project name="CyanogenMod/android_build" />
@@ -23,11 +23,19 @@
 
     <!-- SGT7 -->
     <remove-project name="CyanogenMod/android_frameworks_base" />
+    <remove-project name="CyanogenMod/android_packages_apps_Email" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb-sgt7-linaro" />
+    <project path="packages/apps/Email" name="sbradymobile/android_packages_apps_Email" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
+
+    <!-- HWA Settings app -->
+    <project path="packages/apps/HwaSettings" name="defy-jb/HwaSettings" remote="cmdev" revision="jellybean" />
+
+    <!-- Remove Superuser for now -->
+    <remove-project name="CyanogenMod/android_packages_apps_Superuser" />
 
     <!-- linaro -->
     <remove-project name="CyanogenMod/android_bionic" />
@@ -81,7 +89,7 @@
     <!-- modified CM projects -->
     <project path="hardware/libhardware" name="KFire-Android/android_hardware_libhardware" revision="jellybean" />
     <project path="hardware/libhardware_legacy" name="KFire-Android/android_hardware_libhardware_legacy" revision="jellybean" />
-    <project path="system/core" name="KFire-Android/android_system_core" revision="jellybean" />
+    <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="jb-otter-fix" /> 
 
     <!-- other fixes -->
     <remove-project name="CyanogenMod/android_external_tremolo" />
@@ -93,6 +101,7 @@
     <remove-project name="CyanogenMod/android_external_clang" />
     <remove-project name="CyanogenMod/android_external_dnsmasq" />
     <remove-project name="CyanogenMod/android_external_e2fsprogs" />
+    <remove-project name="CyanogenMod/android_external_lsof" />
     <remove-project name="CyanogenMod/android_external_openssh" />
     <remove-project name="CyanogenMod/android_external_openssl" />
     <remove-project name="CyanogenMod/android_external_openvpn" />
@@ -111,6 +120,7 @@
     <project path="external/clang" name="linaro/android_external_clang" remote="cmdev" revision="jb-linaro-strict" />
     <project path="external/dnsmasq" name="linaro/android_external_dnsmasq" remote="cmdev" revision="jb-linaro-strict" />
     <project path="external/e2fsprogs" name="linaro/android_external_e2fsprogs" remote="cmdev" revision="jb-linaro-strict" />
+    <project path="external/lsof" name="linaro/android_external_lsof" remote="cmdev" revision="jb-linaro-strict" />
     <project path="external/openssh" name="linaro/android_external_openssh" remote="cmdev" revision="jb-linaro-strict" />
     <project path="external/openssl" name="linaro/android_external_openssl" remote="cmdev" revision="jb-linaro-strict" />
     <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="jb-linaro-strict" />
