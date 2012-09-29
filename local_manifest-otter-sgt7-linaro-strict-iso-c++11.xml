@@ -8,9 +8,31 @@
     <remote fetch="git://cmdev/" name="cmdev" />
     <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
 
+    <!-- CM removals -->
+    <remove-project name="CyanogenMod/android_hardware_libhardware" />
+    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+    <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
+    <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
+    <remove-project name="CyanogenMod/android_system_core" />
+
+    <!-- omapzoom replacements -->
+    <project path="device/ti/common-open" name="device/ti/common-open" remote="omapzoom" revision="jb-release" />
+    <project path="device/ti/proprietary-open" name="device/ti/proprietary-open" remote="omapzoom" revision="jb-release" />
+    <project path="hardware/ti/domx" name="omapzoom/android_hardware_ti_domx" remote="cmdev" revision="jb-linaro-strict" />
+    <project path="hardware/ti/omap4xxx" name="omapzoom/android_hardware_ti_omap4xxx" remote="cmdev" revision="jb-linaro-strict" />
+    <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="p-jb-release" />
+    <project path="external/wpa_supplicant_8_ti" name="omapzoom/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="jb-linaro-strict">
+        <annotation name="vendor" value="ti" />
+    </project>
+
+    <!-- modified CM projects -->
+    <project path="hardware/libhardware" name="otter/android_hardware_libhardware" remote="cmdev" revision="jb-otter" />
+    <project path="hardware/libhardware_legacy" name="otter/android_hardware_libhardware_legacy" remote="cmdev" revision="jb-otter" />
+    <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="jb-otter" /> 
+
     <!-- local projects -->
     <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
-    <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" revision="4AI1.7" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI1.7-dev" />
     <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
 
     <remove-project name="CyanogenMod/android_build" />
@@ -27,17 +49,18 @@
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb-sgt7-linaro-iso" />
-    <project path="packages/apps/Email" name="sbradymobile/android_packages_apps_Email" />
+    <project path="packages/apps/Email" name="sgt7/android_packages_apps_Email" remote="cmdev" revision="jellybean" /> <!-- sbradymobile/android_packages_apps_Email -->
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
 
     <!-- HWA Settings app -->
     <project path="packages/apps/HwaSettings" name="defy-jb/HwaSettings" remote="cmdev" revision="jellybean" />
 
-    <!-- Remove Superuser for now -->
-    <remove-project name="CyanogenMod/android_packages_apps_Superuser" />
+    <!-- temporary bugfix -->
+    <remove-project name="CyanogenMod/android_packages_apps_Calculator" />
+    <project path="packages/apps/Calculator" name="otter/android_packages_apps_Calculator" remote="cmdev" revision="jellybean" />
 
-    <!-- linaro -->
+    <!-- Linaro -->
     <remove-project name="CyanogenMod/android_bionic" />
     <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="jb-linaro" />
 
@@ -69,29 +92,7 @@
     <remove-project name="CyanogenMod/android_external_jpeg" />
     <project path="external/jpeg" name="people/tomgall/libjpeg-turbo/libjpeg-turbo" revision="android" remote="linaro-other" />
 
-    <!-- CM removals -->
-    <remove-project name="CyanogenMod/android_hardware_libhardware" />
-    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
-    <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
-    <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
-    <remove-project name="CyanogenMod/android_system_core" />
-
-    <!-- omapzoom replacements -->
-    <project path="device/ti/common-open" name="device/ti/common-open" remote="omapzoom" revision="jb-release" />
-    <project path="device/ti/proprietary-open" name="device/ti/proprietary-open" remote="omapzoom" revision="jb-release" />
-    <project path="hardware/ti/domx" name="omapzoom/android_hardware_ti_domx" remote="cmdev" revision="jb-linaro-strict" />
-    <project path="hardware/ti/omap4xxx" name="omapzoom/android_hardware_ti_omap4xxx" remote="cmdev" revision="jb-linaro-strict" />
-    <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="p-jb-release" />
-    <project path="external/wpa_supplicant_8_ti" name="omapzoom/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="jb-linaro-strict">
-        <annotation name="vendor" value="ti" />
-    </project>
-
-    <!-- modified CM projects -->
-    <project path="hardware/libhardware" name="KFire-Android/android_hardware_libhardware" revision="jellybean" />
-    <project path="hardware/libhardware_legacy" name="KFire-Android/android_hardware_libhardware_legacy" revision="jellybean" />
-    <project path="system/core" name="KFire-Android/android_system_core" revision="jellybean" />
-
-    <!-- other fixes -->
+    <!-- Linaro: Don't use -fmodulo-sched  -->
     <remove-project name="CyanogenMod/android_external_tremolo" />
     <project path="external/tremolo" name="linaro/android_external_tremolo" remote="cmdev" revision="jb-linaro" />
 

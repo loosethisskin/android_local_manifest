@@ -22,10 +22,9 @@
   </project>
 
   <!-- modified CM projects -->
-  <project path="hardware/libhardware" name="KFire-Android/android_hardware_libhardware" revision="jellybean" />
-  <project path="hardware/libhardware_legacy" name="KFire-Android/android_hardware_libhardware_legacy" revision="jellybean" />
-<!-- <project path="system/core" name="KFire-Android/android_system_core" revision="jellybean" /> -->
-  <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="jb-otter-fix" /> 
+  <project path="hardware/libhardware" name="otter/android_hardware_libhardware" remote="cmdev" revision="jb-otter" />
+  <project path="hardware/libhardware_legacy" name="otter/android_hardware_libhardware_legacy" remote="cmdev" revision="jb-otter" />
+  <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="jb-otter" /> 
 
   <!-- local projects -->
   <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
@@ -44,12 +43,5 @@
     <project path="packages/apps/Email" name="sbradymobile/android_packages_apps_Email" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
-
-    <!-- Remove Superuser for now -->
-    <remove-project name="CyanogenMod/android_packages_apps_Superuser" />
-
-    <!-- custom
-    <remove-project name="CyanogenMod/android_bionic" />
-    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="jb-linaro" /> -->
 
   </manifest>
