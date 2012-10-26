@@ -39,7 +39,7 @@
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="jb" />
 
     <remove-project name="CyanogenMod/android_build" />
-    <project path="build" name="otter/android_build" remote="cmdev" revision="jb-linaro" >
+    <project path="build" name="linaro/android_build" remote="cmdev" revision="jb-linaro" >
         <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 
@@ -54,11 +54,7 @@
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
 
     <!-- HWA Settings app -->
-    <project path="packages/apps/HwaSettings" name="defy-jb/HwaSettings" remote="cmdev" revision="jellybean" />
-
-    <!-- Calculator FC fix -->
-    <remove-project name="CyanogenMod/android_packages_apps_Calculator" />
-    <project path="packages/apps/Calculator" name="otter/android_packages_apps_Calculator" remote="cmdev" revision="jb-otter" />
+    <project path="packages/apps/HwaSettings" name="loosethisskin/HwaSettings" revision="jellybean" />
 
     <!-- Linaro -->
     <remove-project name="CyanogenMod/android_bionic" />
