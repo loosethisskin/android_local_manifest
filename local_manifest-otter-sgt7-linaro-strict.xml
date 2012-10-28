@@ -49,9 +49,8 @@
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb-sgt7-linaro-strict" />
-    <project path="packages/apps/Email" name="sgt7/android_packages_apps_Email" remote="cmdev" revision="jellybean" /> <!-- sbradymobile/android_packages_apps_Email -->
-<!--<project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" /> -->
-    <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="jb-dev" />
+    <project path="packages/apps/Email" name="sgt7/android_packages_apps_Email" remote="cmdev" revision="jellybean" />
+    <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="jb-sgt7" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
 
     <!-- HWA Settings app -->
