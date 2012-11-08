@@ -32,7 +32,7 @@
 
     <!-- local projects -->
     <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
-    <project path="kernel/amazon/otter" name="KFire-Android/kernel_omap" revision="4AI1.7" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI1.7-dev" />
     <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
@@ -49,7 +49,7 @@
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="jb-sgt7" />
-    <project path="packages/apps/Email" name="sbradymobile/android_packages_apps_Email" />
+    <project path="packages/apps/Email" name="sgt7/android_packages_apps_Email" remote="cmdev" revision="jb" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="jb-sgt7" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
 
@@ -84,8 +84,8 @@
     <remove-project name="CyanogenMod/android_external_v8" />
     <project path="external/v8" name="linaro/android_external_v8" remote="cmdev" revision="jb-linaro" />
 
-    <!-- Linaro modifications: Replaced traditional libjpeg with libjpeg-turbo -->
+    <!-- Linaro modifications: Replaced traditional libjpeg with libjpeg-turbo
     <remove-project name="CyanogenMod/android_external_jpeg" />
-    <project path="external/jpeg" name="people/tomgall/libjpeg-turbo/libjpeg-turbo" revision="android" remote="linaro-other" />
+    <project path="external/jpeg" name="people/tomgall/libjpeg-turbo/libjpeg-turbo" revision="android" remote="linaro-other" />  -->
 
   </manifest>
