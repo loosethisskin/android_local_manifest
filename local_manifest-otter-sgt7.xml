@@ -16,12 +16,12 @@
     <remove-project name="CyanogenMod/android_system_core" />
 
     <!-- omapzoom replacements -->
-    <project path="device/ti/common-open" name="device/ti/common-open" remote="omapzoom" revision="jb-release" />
-    <project path="device/ti/proprietary-open" name="device/ti/proprietary-open" remote="omapzoom" revision="jb-release" />
+    <!-- -->
+    <project path="device/ti/proprietary-open" name="omapzoom/android_device_ti_proprietary-open" remote="cmdev" revision="d-jb-mr0-release" />
     <project path="hardware/ti/domx" name="platform/hardware/ti/domx" remote="omapzoom" revision="jb-release" />
     <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="omapzoom" revision="p-jb-release" />
-    <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="p-jb-release" />
-    <project path="external/wpa_supplicant_8_ti" name="platform/external/wpa_supplicant_8_ti" remote="omapzoom" revision="jb-release">
+    <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="d-jb-release" />
+    <project path="external/wpa_supplicant_8_ti" name="omapzoom/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="d-jb-release">
         <annotation name="vendor" value="ti" />
     </project>
 
@@ -33,8 +33,8 @@
     <!-- local projects -->
     <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
     <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI1.7-dev" />
-    <project path="vendor/amazon/otter" name="KFire-Android/android_vendor_amazon_otter" revision="jb" />
-    
+    <project path="vendor/amazon/otter" name="otter/android_vendor_amazon_otter" remote="cmdev" revision="jb-dev" />
+
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="jb" />
 
