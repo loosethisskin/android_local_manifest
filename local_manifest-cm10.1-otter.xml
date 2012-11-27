@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="omapzoom" fetch="git://git.omapzoom.org/" />
+
+    <remote name="gh" fetch="git://github.com/" />
+
+    <remote fetch="git://cmdev/" name="cmdev" />
+
+    <!-- CM removals
+    <remove-project name="CyanogenMod/android_hardware_libhardware" />
+    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" /> -->
+    <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
+    <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
+    <remove-project name="CyanogenMod/android_system_core" />
+
+    <!-- omapzoom replacements -->
+<!--<project path="device/ti/common-open" name="device/ti/common-open" remote="omapzoom" revision="d-jb-mr1-release" /> -->
+    <project path="device/ti/proprietary-open" name="device/ti/proprietary-open" remote="omapzoom" revision="d-jb-mr1-release" />
+    <project path="hardware/ti/domx" name="platform/hardware/ti/domx" remote="omapzoom" revision="jb-release" />
+    <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="omapzoom" revision="p-jb-release" /> <!-- p-jb-release p-jb-mr1-release or d-jb-mr1-release -->
+    <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="omapzoom" revision="d-jb-mr1-release" />
+    <project path="external/wpa_supplicant_8_ti" name="platform/external/wpa_supplicant_8_ti" remote="omapzoom" revision="d-jb-mr1-release">
+        <annotation name="vendor" value="ti" />
+    </project>
+
+    <!-- modified CM projects 
+    <project path="hardware/libhardware" name="KFire-Android/android_hardware_libhardware" remote="gh" revision="jellybean" />
+    <project path="hardware/libhardware_legacy" name="KFire-Android/android_hardware_libhardware_legacy" remote="gh" revision="jellybean" /> -->
+    <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="jb-mr1-dev" />
+
+    <!-- local projects -->
+    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb-mr1-dev" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="4AI1.7" />
+<!--
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="p-android-omap-3.4-taichin" />
+-->
+    <project path="vendor/amazon/otter" name="otter/android_vendor_amazon_otter" remote="cmdev" revision="jb-mr1-dev" />
+
+</manifest>
