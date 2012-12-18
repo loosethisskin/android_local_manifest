@@ -71,10 +71,11 @@
     <remove-project name="CyanogenMod/android_frameworks_rs" />
     <remove-project name="CyanogenMod/android_frameworks_support" />
     <remove-project name="CyanogenMod/android_frameworks_wilhelm" />
+    <remove-project name="CyanogenMod/android_hardware_ril" />
     <remove-project name="CyanogenMod/android_libcore" />
     <remove-project name="CyanogenMod/android_packages_apps_Camera" />
     <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
-<!--<remove-project name="CyanogenMod/android_system_core" />-->
+    <remove-project name="CyanogenMod/android_system_core" />
     <remove-project name="CyanogenMod/android_system_extras" />
     <remove-project name="CyanogenMod/android_system_security" />
 
@@ -115,10 +116,11 @@
     <project path="frameworks/rs" name="linaro/android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/support" name="linaro/android_frameworks_support" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/wilhelm" name="linaro/android_frameworks_wilhelm" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="hardware/ril" name="linaro/android_hardware_ril" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="libcore" name="linaro/android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="packages/apps/Camera" name="linaro/android_packages_apps_Camera" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="packages/inputmethods/OpenWnn" name="linaro/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
-<!--<project path="system/core" name="otter/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />-->
+    <project path="system/core" name="otter/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/extras" name="linaro/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/security" name="linaro/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
 
