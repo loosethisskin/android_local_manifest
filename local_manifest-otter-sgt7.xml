@@ -32,7 +32,7 @@
 
     <!-- local projects -->
     <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="jb" />
-    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="jb" />
+    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="cm-10" />
     <project path="vendor/amazon/otter" name="otter/android_vendor_amazon_otter" remote="cmdev" revision="jb-dev" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
