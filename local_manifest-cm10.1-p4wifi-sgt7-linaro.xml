@@ -16,11 +16,19 @@
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7" />
+    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
-    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" />
+    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" />
 
-    <!-- Linaro modifications: gcc 4.7 support
+    <!-- Google GCC 4.7 toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" revision="master" />
+
+    <!-- Misc cherry-picks from AOSP -->
+    <remove-project name="CyanogenMod/android_packages_apps_Browser" />
+    <project path="packages/apps/Browser" name="common/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
+
+    <!-- Linaro modifications: gcc 4.7 support -->
     <remove-project name="CyanogenMod/android_bionic" />
     <remove-project name="CyanogenMod/android_build" />
     <remove-project name="CyanogenMod/android_dalvik" />
@@ -33,6 +41,7 @@
     <remove-project name="CyanogenMod/android_external_e2fsprogs" />
     <remove-project name="CyanogenMod/android_external_elfutils" />
     <remove-project name="CyanogenMod/android_external_embunit" />
+    <remove-project name="CyanogenMod/android_external_freetype" />
     <remove-project name="CyanogenMod/android_external_linux-tools-perf" />
     <remove-project name="CyanogenMod/android_external_llvm" />
     <remove-project name="CyanogenMod/android_external_lsof" />
@@ -51,7 +60,7 @@
     <remove-project name="CyanogenMod/android_external_webkit" />
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
-    <remove-project name="CyanogenMod/android_frameworks_base" />
+<!--<remove-project name="CyanogenMod/android_frameworks_base" />-->
     <remove-project name="CyanogenMod/android_frameworks_compile_libbcc" />
     <remove-project name="CyanogenMod/android_frameworks_compile_mclinker" />
     <remove-project name="CyanogenMod/android_frameworks_compile_slang" />
@@ -80,6 +89,7 @@
     <project path="external/e2fsprogs" name="linaro/android_external_e2fsprogs" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/elfutils" name="linaro/android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/embunit" name="linaro/android_external_embunit" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/freetype" name="linaro/android_external_freetype" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/linux-tools-perf" name="linaro/android_external_linux-tools-perf" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/llvm" name="linaro/android_external_llvm" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/lsof" name="linaro/android_external_lsof" remote="cmdev" revision="cm-10.1-linaro" />
@@ -98,7 +108,7 @@
     <project path="external/webkit" name="linaro/android_external_webkit" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/wpa_supplicant_8" name="linaro/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/av" name="linaro/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-linaro" />
+<!--<project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-linaro" />-->
     <project path="frameworks/compile/libbcc" name="linaro/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/mclinker" name="linaro/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/slang" name="linaro/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
@@ -113,18 +123,6 @@
     <project path="packages/inputmethods/OpenWnn" name="linaro/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/core" name="linaro/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/extras" name="linaro/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="system/security" name="linaro/android_system_security" remote="cmdev" revision="cm-10.1-linaro" /> -->
-
-    <!-- SGT7 GCC47
-    <remove-project name="sgt7/android_frameworks_base" />
-    <remove-project name="CyanogenMod/android_packages_apps_Settings" />
-    <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
-    <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
-    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" /> -->
-
-    <!-- Google GCC 4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" revision="master" />
+    <project path="system/security" name="linaro/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
 
 </manifest>
