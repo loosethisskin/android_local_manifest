@@ -6,8 +6,9 @@
     <remote fetch="git://cmdev/" name="cmdev" />
 
     <!-- local projects -->
-    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/otter" name="otter/kernel_omap" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="device/amazon/omap4-common" name="otter/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1" />
+    <project path="device/amazon/otter" name="otter/device-amazon-otter" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="kernel/amazon/otter-common" name="otter/kernel_omap" remote="cmdev" revision="cm-10.1-dev" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
@@ -95,7 +96,8 @@
     <project path="external/openssh" name="linaro/android_external_openssh" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openssl" name="linaro/android_external_openssl" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />
+<!--<project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />-->
+    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="aosp-linaro" />
     <project path="external/ping" name="linaro/android_external_ping" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/ping6" name="linaro/android_external_ping6" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/powertop" name="linaro/android_external_powertop" remote="cmdev" revision="cm-10.1-linaro" />
@@ -122,8 +124,8 @@
     <project path="system/security" name="linaro/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
 
     <!-- Google gcc4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
 
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />

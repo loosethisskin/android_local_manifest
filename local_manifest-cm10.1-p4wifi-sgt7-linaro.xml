@@ -5,9 +5,9 @@
 
     <!-- p4wifi -->
     <project path="device/samsung/p4wifi" name="p4wifi/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
-    <project path="device/samsung/p4-common" name="pershoot/android_device_samsung_p4-common" revision="cm-10.1" />
+    <project path="device/samsung/p4-common" name="p4wifi/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
     <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
-    <project path="kernel/samsung/p4" name="p4wifi/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1" />
+    <project path="kernel/samsung/p4" name="p4wifi/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1-dev" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
@@ -21,8 +21,8 @@
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" />
 
     <!-- Google GCC 4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
 
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />
@@ -97,7 +97,8 @@
     <project path="external/openssh" name="linaro/android_external_openssh" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openssl" name="linaro/android_external_openssl" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />
+<!--<project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />-->
+    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="aosp-linaro" />
     <project path="external/ping" name="linaro/android_external_ping" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/ping6" name="linaro/android_external_ping6" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/powertop" name="linaro/android_external_powertop" remote="cmdev" revision="cm-10.1-linaro" />

@@ -5,7 +5,7 @@
 
     <!-- p4wifi -->
     <project path="device/samsung/p4wifi" name="p4wifi/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
-    <project path="device/samsung/p4-common" name="pershoot/android_device_samsung_p4-common" revision="cm-10.1" />
+    <project path="device/samsung/p4-common" name="p4wifi/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
     <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
     <project path="kernel/samsung/p4" name="p4wifi/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1" />
 
