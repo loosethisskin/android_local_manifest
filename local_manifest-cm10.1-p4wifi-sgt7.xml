@@ -21,17 +21,7 @@
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" />
 
     <!-- Google GCC 4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" remote="aosp" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" remote="aosp" revision="master" />
-
-    <!-- Misc cherry-picks from AOSP -->
-    <remove-project name="CyanogenMod/android_packages_apps_Browser" />
-    <project path="packages/apps/Browser" name="common/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
-
-    <!-- Misc cherry-picks
-    <remove-project name="CyanogenMod/android_dalvik" />
-    <remove-project name="CyanogenMod/android_libcore" />
-    <project path="dalvik" name="linaro/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="libcore" name="linaro/android_libcore" remote="cmdev" revision="cm-10.1-linaro" /> -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
 
 </manifest>

@@ -34,7 +34,7 @@
     <remove-project name="CyanogenMod/android_build" />
     <remove-project name="CyanogenMod/android_dalvik" />
     <remove-project name="CyanogenMod/android_development" />
-    <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
+    <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />   
     <remove-project name="CyanogenMod/android_external_busybox" />
     <remove-project name="CyanogenMod/android_external_chromium" />
     <remove-project name="CyanogenMod/android_external_clang" />
@@ -76,7 +76,7 @@
     <remove-project name="CyanogenMod/android_system_extras" />
     <remove-project name="CyanogenMod/android_system_security" />
 
-    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="cm-10.1-pbeeler" />
+    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="build" name="linaro/android_build" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="dalvik" name="linaro/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="linaro/android_development" remote="cmdev" revision="cm-10.1-linaro" />
@@ -96,8 +96,7 @@
     <project path="external/openssh" name="linaro/android_external_openssh" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openssl" name="linaro/android_external_openssl" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="cm-10.1-linaro" />
-<!--<project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />-->
-    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="aosp-linaro" />
+    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/ping" name="linaro/android_external_ping" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/ping6" name="linaro/android_external_ping6" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/powertop" name="linaro/android_external_powertop" remote="cmdev" revision="cm-10.1-linaro" />
