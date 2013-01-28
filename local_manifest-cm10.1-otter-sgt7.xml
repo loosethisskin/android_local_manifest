@@ -21,12 +21,9 @@
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
     <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" />
 
-    <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
-    <project path="hardware/ti/omap4xxx" name="omapzoom/android_hardware_ti_omap4xxx" remote="cmdev" revision="cm-10.1-otter" />
+    <project path="external/wpa_supplicant_8_ti" name="omapzoom/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="p-jb-mr1-release" />
 
     <remove-project name="CyanogenMod/android_frameworks_av" />
-    <project path="frameworks/av" name="linaro/android_frameworks_av" remote="cmdev" revision="cm-10.1-otter" />
-
-    <project path="external/wpa_supplicant_8_ti" name="omapzoom/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="p-jb-mr1-release" />
+    <project path="frameworks/av" name="linaro/android_frameworks_av" remote="cmdev" revision="cm-10.1" />
 
 </manifest>
