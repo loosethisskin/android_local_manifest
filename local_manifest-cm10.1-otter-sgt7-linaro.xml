@@ -77,6 +77,7 @@
     <project path="dalvik" name="linaro/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="linaro/android_development" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/bluetooth/bluedroid" name="linaro/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
+<!--<project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" remote="aosp" revision="master" />-->
     <project path="external/busybox" name="linaro/android_external_busybox" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/chromium" name="linaro/android_external_chromium" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/clang" name="linaro/android_external_clang" remote="cmdev" revision="cm-10.1-linaro" />
@@ -123,6 +124,9 @@
     <!-- Google gcc4.7 toolchains -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+
+    <!-- Linaro toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/linaro-4.8" name="toolchains/android-linaro-toolchain-4.8" remote="cmdev" revision="master" />
 
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />
