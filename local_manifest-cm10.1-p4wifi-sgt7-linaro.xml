@@ -18,7 +18,7 @@
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
     <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
-    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-10.1" />
+    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
 
     <!-- Google GCC 4.7 toolchains -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
