@@ -3,24 +3,24 @@
 
     <remote fetch="git://cmdev/" name="cmdev" />
 
-    <!-- p4wifi -->
-    <project path="device/samsung/p4" name="p4wifi/android_device_samsung_p4" remote="cmdev" revision="cm-10.1" />
-    <project path="device/samsung/p4-common" name="p4wifi/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
-    <project path="device/samsung/p4wifi" name="p4wifi/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/samsung/p4" name="p4wifi/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1-dev" />
+    <!-- p4 -->
+    <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="cm-10.1" />
+    <project path="device/samsung/p4-common" name="loosethisskin/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
+    <project path="device/samsung/p4wifi" name="loosethisskin/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
+    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1-dev" />
     <project path="vendor/samsung/p4" name="pershoot/android_vendor_samsung_p4" revision="cm-10.1" />
     <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
-    <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
+    <project path="vendor/cm" name="loosethisskin/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
 
     <!-- SGT7 -->
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
-    <project path="packages/apps/Settings" name="sgt7/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
-    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
+    <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
+    <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
 
     <!-- Google GCC 4.7 toolchains -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
@@ -28,7 +28,7 @@
 
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />
-    <project path="packages/apps/Browser" name="common/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
+    <project path="packages/apps/Browser" name="loosethisskin/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
 
     <!-- Linaro modifications: gcc 4.7 support -->
     <remove-project name="CyanogenMod/android_bionic" />
@@ -78,51 +78,51 @@
     <remove-project name="CyanogenMod/android_system_extras" />
     <remove-project name="CyanogenMod/android_system_security" />
 
-    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="cm-10.1" />
-    <project path="build" name="linaro/android_build" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="dalvik" name="linaro/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="development" name="linaro/android_development" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/bluetooth/bluedroid" name="linaro/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/busybox" name="linaro/android_external_busybox" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/chromium" name="linaro/android_external_chromium" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/clang" name="linaro/android_external_clang" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/dnsmasq" name="linaro/android_external_dnsmasq" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/e2fsprogs" name="linaro/android_external_e2fsprogs" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/elfutils" name="linaro/android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/embunit" name="linaro/android_external_embunit" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/freetype" name="linaro/android_external_freetype" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/linux-tools-perf" name="linaro/android_external_linux-tools-perf" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/llvm" name="linaro/android_external_llvm" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/lsof" name="linaro/android_external_lsof" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/mesa3d" name="linaro/android_external_mesa3d" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/openssh" name="linaro/android_external_openssh" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/openssl" name="linaro/android_external_openssl" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/openvpn" name="linaro/android_external_openvpn" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/oprofile" name="linaro/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/ping" name="linaro/android_external_ping" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/ping6" name="linaro/android_external_ping6" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/powertop" name="linaro/android_external_powertop" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/skia" name="linaro/android_external_skia" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/stlport" name="linaro/android_external_stlport" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/tcpdump" name="linaro/android_external_tcpdump" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/v8" name="linaro/android_external_v8" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/webkit" name="linaro/android_external_webkit" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/wpa_supplicant_8" name="linaro/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/av" name="linaro/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/compile/libbcc" name="linaro/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/compile/mclinker" name="linaro/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/compile/slang" name="linaro/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/ex" name="linaro/android_frameworks_ex" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/native" name="linaro/android_frameworks_native" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/rs" name="linaro/android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/support" name="linaro/android_frameworks_support" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/wilhelm" name="linaro/android_frameworks_wilhelm" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="hardware/ril" name="linaro/android_hardware_ril" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="libcore" name="linaro/android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="packages/apps/Camera" name="linaro/android_packages_apps_Camera" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="packages/inputmethods/OpenWnn" name="linaro/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="system/core" name="linaro/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="system/extras" name="linaro/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="system/security" name="linaro/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="cm-10.1" />
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="dalvik" name="loosethisskin/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="development" name="loosethisskin/android_development" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/bluetooth/bluedroid" name="loosethisskin/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/busybox" name="loosethisskin/android_external_busybox" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/chromium" name="loosethisskin/android_external_chromium" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/clang" name="loosethisskin/android_external_clang" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/dnsmasq" name="loosethisskin/android_external_dnsmasq" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/e2fsprogs" name="loosethisskin/android_external_e2fsprogs" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/elfutils" name="loosethisskin/android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/embunit" name="loosethisskin/android_external_embunit" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/freetype" name="loosethisskin/android_external_freetype" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/linux-tools-perf" name="loosethisskin/android_external_linux-tools-perf" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/llvm" name="loosethisskin/android_external_llvm" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/lsof" name="loosethisskin/android_external_lsof" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/mesa3d" name="loosethisskin/android_external_mesa3d" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/openssh" name="loosethisskin/android_external_openssh" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/openssl" name="loosethisskin/android_external_openssl" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/openvpn" name="loosethisskin/android_external_openvpn" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/oprofile" name="loosethisskin/android_external_oprofile" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/ping" name="loosethisskin/android_external_ping" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/ping6" name="loosethisskin/android_external_ping6" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/powertop" name="loosethisskin/android_external_powertop" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/skia" name="loosethisskin/android_external_skia" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/stlport" name="loosethisskin/android_external_stlport" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/tcpdump" name="loosethisskin/android_external_tcpdump" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/v8" name="loosethisskin/android_external_v8" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/webkit" name="loosethisskin/android_external_webkit" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/wpa_supplicant_8" name="loosethisskin/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/compile/libbcc" name="loosethisskin/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/compile/mclinker" name="loosethisskin/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/compile/slang" name="loosethisskin/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/ex" name="loosethisskin/android_frameworks_ex" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/rs" name="loosethisskin/android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/support" name="loosethisskin/android_frameworks_support" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="frameworks/wilhelm" name="loosethisskin/android_frameworks_wilhelm" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="hardware/ril" name="loosethisskin/android_hardware_ril" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="libcore" name="loosethisskin/android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="packages/apps/Camera" name="loosethisskin/android_packages_apps_Camera" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="packages/inputmethods/OpenWnn" name="loosethisskin/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="system/extras" name="loosethisskin/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="system/security" name="loosethisskin/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
 
 </manifest>
