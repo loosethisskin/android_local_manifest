@@ -4,10 +4,12 @@
     <remote fetch="git://cmdev/" name="cmdev" />
 
     <!-- p4wifi -->
-    <project path="device/samsung/p4wifi" name="p4wifi/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
+    <project path="device/samsung/p4" name="p4wifi/android_device_samsung_p4" remote="cmdev" revision="cm-10.1" />
     <project path="device/samsung/p4-common" name="p4wifi/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
-    <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
+    <project path="device/samsung/p4wifi" name="p4wifi/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
     <project path="kernel/samsung/p4" name="p4wifi/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="vendor/samsung/p4" name="pershoot/android_vendor_samsung_p4" revision="cm-10.1" />
+    <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="common/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
@@ -60,7 +62,6 @@
     <remove-project name="CyanogenMod/android_external_webkit" />
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
-<!--<remove-project name="CyanogenMod/android_frameworks_base" />-->
     <remove-project name="CyanogenMod/android_frameworks_compile_libbcc" />
     <remove-project name="CyanogenMod/android_frameworks_compile_mclinker" />
     <remove-project name="CyanogenMod/android_frameworks_compile_slang" />
@@ -77,7 +78,7 @@
     <remove-project name="CyanogenMod/android_system_extras" />
     <remove-project name="CyanogenMod/android_system_security" />
 
-    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="bionic" name="linaro/android_bionic" remote="cmdev" revision="cm-10.1" />
     <project path="build" name="linaro/android_build" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="dalvik" name="linaro/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="linaro/android_development" remote="cmdev" revision="cm-10.1-linaro" />
@@ -108,7 +109,6 @@
     <project path="external/webkit" name="linaro/android_external_webkit" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/wpa_supplicant_8" name="linaro/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/av" name="linaro/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
-<!--<project path="frameworks/base" name="sgt7/android_frameworks_base" remote="cmdev" revision="cm-10.1-linaro" />-->
     <project path="frameworks/compile/libbcc" name="linaro/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/mclinker" name="linaro/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/slang" name="linaro/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
