@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remote name="gh" fetch="git://github.com/" />
-    <remote name="omapzoom" fetch="git://git.omapzoom.org/" />
+    <!-- replace "git://cmdev/" with "git://github.com/" to use my repos on github -->
     <remote fetch="git://cmdev/" name="cmdev" />
 
     <!-- local projects -->
