@@ -29,6 +29,9 @@
     <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
     <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
 
+    <!-- armzipalign -->
+    <project path="external/armzipalign" name="dhacker29/platform_external_armzipalign" revision="master" />
+
     <!-- Linaro modifications: gcc 4.7 support -->
     <remove-project name="CyanogenMod/android_bionic" />
     <remove-project name="CyanogenMod/android_build" />
