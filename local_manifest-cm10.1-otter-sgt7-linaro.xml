@@ -6,15 +6,16 @@
 
     <!-- kf common -->
     <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1" />
+<!--<project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1-dev-jem" />-->
     <!-- jem -->
     <project path="device/amazon/bowser-common" name="loosethisskin/android_device_amazon_bowser-common" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/jem" name="loosethisskin/android_device_amazon_jem" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="cm-10.1" />
+    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="dev" />
     <!-- otter -->
     <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter2" name="loosethisskin/android_device_amazon_otter2" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-dev-test" />
     <!-- amazon vendor -->
 <!--<project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" revision="cm-10.1" />-->
     <project path="vendor/amazon" name="KFire-Android/proprietary_vendor_amazon" revision="cm-10.1" />
