@@ -5,7 +5,7 @@
     <remote fetch="git://cmdev/" name="cmdev" />
 
     <!-- kf common -->
-    <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1" />
+    <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1-dev" />
     <!-- jem -->
     <project path="device/amazon/bowser-common" name="loosethisskin/android_device_amazon_bowser-common" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/jem" name="loosethisskin/android_device_amazon_jem" remote="cmdev" revision="cm-10.1" />

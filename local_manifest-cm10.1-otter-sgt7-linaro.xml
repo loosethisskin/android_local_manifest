@@ -5,17 +5,16 @@
     <remote fetch="git://cmdev/" name="cmdev" />
 
     <!-- kf common -->
-    <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1" />
-<!--<project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1-dev-jem" />-->
+    <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-10.1-dev" />
     <!-- jem -->
     <project path="device/amazon/bowser-common" name="loosethisskin/android_device_amazon_bowser-common" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/jem" name="loosethisskin/android_device_amazon_jem" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="dev" />
+    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="cm-10.1-dev" />
     <!-- otter -->
     <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter2" name="loosethisskin/android_device_amazon_otter2" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-dev-test" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-exp" />
     <!-- amazon vendor -->
 <!--<project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" revision="cm-10.1" />-->
     <project path="vendor/amazon" name="KFire-Android/proprietary_vendor_amazon" revision="cm-10.1" />
@@ -67,18 +66,14 @@
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
-    <remove-project name="CyanogenMod/android_frameworks_compile_libbcc" />
     <remove-project name="CyanogenMod/android_frameworks_compile_mclinker" />
     <remove-project name="CyanogenMod/android_frameworks_compile_slang" />
     <remove-project name="CyanogenMod/android_frameworks_ex" />
     <remove-project name="CyanogenMod/android_frameworks_native" />
     <remove-project name="CyanogenMod/android_frameworks_rs" />
-    <remove-project name="CyanogenMod/android_frameworks_support" />
     <remove-project name="CyanogenMod/android_frameworks_wilhelm" />
-    <remove-project name="CyanogenMod/android_hardware_ril" />
     <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
     <remove-project name="CyanogenMod/android_libcore" />
-    <remove-project name="CyanogenMod/android_packages_apps_Camera" />
     <remove-project name="CyanogenMod/android_packages_inputmethods_LatinIME" />
     <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
     <remove-project name="CyanogenMod/android_system_core" />
@@ -117,18 +112,14 @@
     <project path="external/wpa_supplicant_8" name="loosethisskin/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/wpa_supplicant_8_ti" name="loosethisskin/android_external_wpa_supplicant_8_ti" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/compile/libbcc" name="loosethisskin/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/mclinker" name="loosethisskin/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/slang" name="loosethisskin/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/ex" name="loosethisskin/android_frameworks_ex" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/rs" name="loosethisskin/android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/support" name="loosethisskin/android_frameworks_support" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/wilhelm" name="loosethisskin/android_frameworks_wilhelm" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="hardware/ril" name="loosethisskin/android_hardware_ril" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="hardware/ti/omap4xxx" name="loosethisskin/android_hardware_ti_omap4xxx" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="libcore" name="loosethisskin/android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="packages/apps/Camera" name="loosethisskin/android_packages_apps_Camera" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="packages/inputmethods/LatinIME" name="loosethisskin/android_packages_inputmethods_LatinIME" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="packages/inputmethods/OpenWnn" name="loosethisskin/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />

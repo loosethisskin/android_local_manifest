@@ -8,7 +8,7 @@
     <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="cm-10.1" />
     <project path="device/samsung/p4-common" name="loosethisskin/android_device_samsung_p4-common" remote="cmdev" revision="cm-10.1" />
     <project path="device/samsung/p4wifi" name="loosethisskin/android_device_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1" />
     <!-- samsung vendor -->
 <!--<project path="vendor/samsung" revision="cm-10.1" name="TheMuppets/proprietary_vendor_samsung" /> -->
     <project path="vendor/samsung/p4" name="pershoot/android_vendor_samsung_p4" revision="cm-10.1" />
@@ -24,14 +24,6 @@
     <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
     <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
     <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
-
-    <!-- Google GCC 4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
-
-    <!-- Misc cherry-picks from AOSP -->
-    <remove-project name="CyanogenMod/android_packages_apps_Browser" />
-    <project path="packages/apps/Browser" name="loosethisskin/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
 
     <!-- Linaro modifications: gcc 4.7 support -->
     <remove-project name="CyanogenMod/android_bionic" />
@@ -65,17 +57,13 @@
     <remove-project name="CyanogenMod/android_external_webkit" />
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
-    <remove-project name="CyanogenMod/android_frameworks_compile_libbcc" />
     <remove-project name="CyanogenMod/android_frameworks_compile_mclinker" />
     <remove-project name="CyanogenMod/android_frameworks_compile_slang" />
     <remove-project name="CyanogenMod/android_frameworks_ex" />
     <remove-project name="CyanogenMod/android_frameworks_native" />
     <remove-project name="CyanogenMod/android_frameworks_rs" />
-    <remove-project name="CyanogenMod/android_frameworks_support" />
     <remove-project name="CyanogenMod/android_frameworks_wilhelm" />
-    <remove-project name="CyanogenMod/android_hardware_ril" />
     <remove-project name="CyanogenMod/android_libcore" />
-    <remove-project name="CyanogenMod/android_packages_apps_Camera" />
     <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
     <remove-project name="CyanogenMod/android_system_core" />
     <remove-project name="CyanogenMod/android_system_extras" />
@@ -112,20 +100,24 @@
     <project path="external/webkit" name="loosethisskin/android_external_webkit" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/wpa_supplicant_8" name="loosethisskin/android_external_wpa_supplicant_8" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/compile/libbcc" name="loosethisskin/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/mclinker" name="loosethisskin/android_frameworks_compile_mclinker" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/compile/slang" name="loosethisskin/android_frameworks_compile_slang" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/ex" name="loosethisskin/android_frameworks_ex" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/rs" name="loosethisskin/android_frameworks_rs" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="frameworks/support" name="loosethisskin/android_frameworks_support" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="frameworks/wilhelm" name="loosethisskin/android_frameworks_wilhelm" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="hardware/ril" name="loosethisskin/android_hardware_ril" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="libcore" name="loosethisskin/android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="packages/apps/Camera" name="loosethisskin/android_packages_apps_Camera" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="packages/inputmethods/OpenWnn" name="loosethisskin/android_packages_inputmethods_OpenWnn" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/extras" name="loosethisskin/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/security" name="loosethisskin/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
+
+    <!-- Misc cherry-picks from AOSP -->
+    <remove-project name="CyanogenMod/android_packages_apps_Browser" />
+    <project path="packages/apps/Browser" name="loosethisskin/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
+
+    <!-- Google GCC 4.7 toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
 
 </manifest>
