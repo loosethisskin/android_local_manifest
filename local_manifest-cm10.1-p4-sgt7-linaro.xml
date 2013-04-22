@@ -3,6 +3,7 @@
 
     <!-- replace "git://cmdev/" with "git://github.com/" to use my repos on github -->
     <remote fetch="git://cmdev/" name="cmdev" />
+    <remote  name="sm" fetch="https://github.com/SaberMod/" />
 
     <!-- p4 -->
     <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="cm-10.1" />
@@ -23,7 +24,7 @@
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
     <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
     <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
-    <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1" />
+    <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1-dev" />
 
     <!-- Linaro modifications: gcc 4.7 support -->
     <remove-project name="CyanogenMod/android_bionic" />

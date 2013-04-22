@@ -15,7 +15,7 @@
     <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter2" name="loosethisskin/android_device_amazon_otter2" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-exp" />
     <!-- amazon vendor -->
 <!--<project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" revision="cm-10.1" />-->
     <project path="vendor/amazon" name="KFire-Android/proprietary_vendor_amazon" revision="cm-10.1" />
@@ -86,7 +86,7 @@
     <remove-project name="CyanogenMod/android_system_security" />
 
     <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-gcc48" />
     <project path="dalvik" name="loosethisskin/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="loosethisskin/android_development" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/bluetooth/bluedroid" name="loosethisskin/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
@@ -131,6 +131,14 @@
     <project path="system/extras" name="loosethisskin/android_system_extras" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="system/security" name="loosethisskin/android_system_security" remote="cmdev" revision="cm-10.1-linaro" />
 
+    <!-- needed to compile with Linaro 4.8
+    <remove-project name="CyanogenMod/android_frameworks_compile_libbcc" />
+    <project path="frameworks/compile/libbcc" name="loosethisskin/android_frameworks_compile_libbcc" remote="cmdev" revision="cm-10.1-linaro" /> -->
+
+    <!-- possibly needed to compile with gcc 4.8
+    <remove-project name="CyanogenMod/android_external_bash" />
+    <project path="external/bash" name="loosethisskin/android_external_bash" remote="cmdev" revision="cm-10.1-linaro" /> -->
+
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />
     <project path="packages/apps/Browser" name="loosethisskin/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
@@ -138,5 +146,11 @@
     <!-- Google gcc4.7 toolchains -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+
+    <!-- Sabermod toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.7" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.7" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
 
 </manifest>
