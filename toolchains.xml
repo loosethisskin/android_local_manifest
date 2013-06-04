@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="linaro" fetch="http://android.git.linaro.org/git-ro/" />
+
+    <!-- Google gcc4.7 toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
+
+    <!-- Sabermod toolchains 
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-eabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.7" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-androideabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.7" remote="sm" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.9" remote="sm" revision="master" />
+    -->
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-eabi-4.7" name="toolchains/sabermod/sabermod-arm-eabi-4.7" remote="cmdev" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-eabi-4.8" name="toolchains/sabermod/sabermod-arm-eabi-4.8" remote="cmdev" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-androideabi-4.7" name="toolchains/sabermod/sabermod-arm-linux-androideabi-4.7" remote="cmdev" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/sabermod-arm-linux-androideabi-4.9" name="toolchains/sabermod/sabermod-arm-linux-androideabi-4.9" remote="cmdev" revision="master" />
+
+    <!-- linaro GCC 4.8 -->
+<!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" groups="linux,arm,common" revision="master" remote="linaro" />-->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="toolchains/linaro/arm-linux-androideabi-4.8-linaro" revision="master-v1" remote="cmdev" />
+
+<!--<remote name="cfx" fetch="https://bitbucket.org/codefirex/" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" remote="cfx" revision="jb-devel" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.8" remote="cfx" revision="jb-devel" />-->
+
+</manifest>

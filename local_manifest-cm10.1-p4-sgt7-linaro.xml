@@ -22,7 +22,7 @@
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro-dev" />
     <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
     <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1-dev" />
 
@@ -71,7 +71,7 @@
     <remove-project name="CyanogenMod/android_system_security" />
 
     <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="cm-10.1" />
-    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-linaro" /> <!-- cm-10.1-linaro cm-10.1-gcc48 -->
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-gcc49" /> <!-- cm-10.1-linaro cm-10.1-gcc49 -->
     <project path="dalvik" name="loosethisskin/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="loosethisskin/android_development" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/bluetooth/bluedroid" name="loosethisskin/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
@@ -120,20 +120,5 @@
     <!-- Misc cherry-picks from AOSP -->
     <remove-project name="CyanogenMod/android_packages_apps_Browser" />
     <project path="packages/apps/Browser" name="loosethisskin/android_packages_apps_Browser" remote="cmdev" revision="cm-10.1" />
-
-    <!-- Google GCC 4.7 toolchains -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="toolchains/google/arm-eabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="toolchains/google/arm-linux-androideabi-4.7" remote="cmdev" groups="linux,arm" revision="master" />
-
-    <!-- Sabermod toolchains 
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.7" remote="sm" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.7" remote="sm" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
-    -->
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.7" name="toolchains/sabermod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.7" remote="cmdev" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-eabi-4.8" name="toolchains/sabermod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="cmdev" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.7" name="toolchains/sabermod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.7" remote="cmdev" revision="master" />
-    <project path="prebuilts/gcc/linux-x86/arm/sm-arm-linux-androideabi-4.8" name="toolchains/sabermod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="cmdev" revision="master" />
 
 </manifest>
