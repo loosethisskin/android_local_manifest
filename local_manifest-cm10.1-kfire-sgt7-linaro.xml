@@ -15,7 +15,7 @@
     <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter2" name="loosethisskin/android_device_amazon_otter2" remote="cmdev" revision="cm-10.1" />
     <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="cm-10.1" />
-    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-dev" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-10.1-exp" />
     <!-- amazon vendor -->
 <!--<project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" revision="cm-10.1" />-->
     <project path="vendor/amazon" name="KFire-Android/proprietary_vendor_amazon" revision="cm-10.1" />
@@ -43,7 +43,7 @@
     <remove-project name="CyanogenMod/android_build" />
     <remove-project name="CyanogenMod/android_dalvik" />
     <remove-project name="CyanogenMod/android_development" />
-    <remove-project name="CyanogenMod/android_external_aac" />
+<!--<remove-project name="CyanogenMod/android_external_aac" />-->
     <remove-project name="CyanogenMod/android_external_bluetooth_bluedroid" />
     <remove-project name="CyanogenMod/android_external_busybox" />
     <remove-project name="CyanogenMod/android_external_chromium" />
@@ -53,6 +53,7 @@
     <remove-project name="CyanogenMod/android_external_elfutils" />
     <remove-project name="CyanogenMod/android_external_embunit" />
     <remove-project name="CyanogenMod/android_external_freetype" />
+    <remove-project name="CyanogenMod/android_external_fuse" />
     <remove-project name="CyanogenMod/android_external_linux-tools-perf" />
     <remove-project name="CyanogenMod/android_external_llvm" />
     <remove-project name="CyanogenMod/android_external_lsof" />
@@ -87,10 +88,10 @@
     <remove-project name="CyanogenMod/android_system_security" />
 
     <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-gcc49" /> <!-- cm-10.1-linaro cm-10.1-gcc49 -->
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-linaro" /> <!-- cm-10.1-linaro cm-10.1-gcc49 -->
     <project path="dalvik" name="loosethisskin/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="loosethisskin/android_development" remote="cmdev" revision="cm-10.1-linaro" />
-    <project path="external/aac" name="loosethisskin/android_external_aac" remote="cmdev" revision="cm-10.1-linaro" />
+<!--<project path="external/aac" name="loosethisskin/android_external_aac" remote="cmdev" revision="cm-10.1-linaro" />-->
     <project path="external/bluetooth/bluedroid" name="loosethisskin/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/busybox" name="loosethisskin/android_external_busybox" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/chromium" name="loosethisskin/android_external_chromium" remote="cmdev" revision="cm-10.1-linaro" />
@@ -100,6 +101,7 @@
     <project path="external/elfutils" name="loosethisskin/android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/embunit" name="loosethisskin/android_external_embunit" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/freetype" name="loosethisskin/android_external_freetype" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/fuse" name="loosethisskin/android_external_fuse" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/linux-tools-perf" name="loosethisskin/android_external_linux-tools-perf" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/llvm" name="loosethisskin/android_external_llvm" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/lsof" name="loosethisskin/android_external_lsof" remote="cmdev" revision="cm-10.1-linaro" />

@@ -12,8 +12,8 @@
     <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-10.1" />
     <!-- samsung vendor -->
 <!--<project path="vendor/samsung" revision="cm-10.1" name="TheMuppets/proprietary_vendor_samsung" /> -->
-    <project path="vendor/samsung/p4" name="pershoot/android_vendor_samsung_p4" revision="cm-10.1" />
-    <project path="vendor/samsung/p4wifi" name="pershoot/android_vendor_samsung_p4wifi" revision="cm-10.1" />
+    <project path="vendor/samsung/p4" name="loosethisskin/android_vendor_samsung_p4" remote="cmdev" revision="cm-10.1" />
+    <project path="vendor/samsung/p4wifi" name="loosethisskin/android_vendor_samsung_p4wifi" remote="cmdev" revision="cm-10.1" />
 
     <remove-project name="CyanogenMod/android_vendor_cm" />
     <project path="vendor/cm" name="loosethisskin/android_vendor_cm" remote="cmdev" revision="cm-10.1" />
@@ -22,7 +22,7 @@
     <remove-project name="CyanogenMod/android_frameworks_base" />
     <remove-project name="CyanogenMod/android_packages_apps_Settings" />
     <remove-project name="CyanogenMod/android_packages_apps_Trebuchet" />
-    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro-dev" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-10.1-sgt7-linaro" />
     <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-10.1-sgt7" />
     <project path="packages/apps/Trebuchet" name="loosethisskin/android_packages_apps_Trebuchet" remote="cmdev" revision="cm-10.1-dev" />
 
@@ -40,6 +40,7 @@
     <remove-project name="CyanogenMod/android_external_elfutils" />
     <remove-project name="CyanogenMod/android_external_embunit" />
     <remove-project name="CyanogenMod/android_external_freetype" />
+    <remove-project name="CyanogenMod/android_external_fuse" />
     <remove-project name="CyanogenMod/android_external_linux-tools-perf" />
     <remove-project name="CyanogenMod/android_external_llvm" />
     <remove-project name="CyanogenMod/android_external_lsof" />
@@ -71,7 +72,7 @@
     <remove-project name="CyanogenMod/android_system_security" />
 
     <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="cm-10.1" />
-    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-gcc49" /> <!-- cm-10.1-linaro cm-10.1-gcc49 -->
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-10.1-linaro" /> <!-- cm-10.1-linaro cm-10.1-gcc49 -->
     <project path="dalvik" name="loosethisskin/android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="development" name="loosethisskin/android_development" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/bluetooth/bluedroid" name="loosethisskin/android_external_bluetooth_bluedroid" remote="cmdev" revision="cm-10.1-linaro" />
@@ -83,6 +84,7 @@
     <project path="external/elfutils" name="loosethisskin/android_external_elfutils" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/embunit" name="loosethisskin/android_external_embunit" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/freetype" name="loosethisskin/android_external_freetype" remote="cmdev" revision="cm-10.1-linaro" />
+    <project path="external/fuse" name="loosethisskin/android_external_fuse" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/linux-tools-perf" name="loosethisskin/android_external_linux-tools-perf" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/llvm" name="loosethisskin/android_external_llvm" remote="cmdev" revision="cm-10.1-linaro" />
     <project path="external/lsof" name="loosethisskin/android_external_lsof" remote="cmdev" revision="cm-10.1-linaro" />
