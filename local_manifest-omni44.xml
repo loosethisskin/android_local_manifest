@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- replace "git://cmdev/" with "git://github.com/" to use my repos on github -->
+    <remote fetch="git://cmdev/" name="cmdev" />
+
+    <!-- kf common -->
+    <project path="device/amazon/omap4-common" name="loosethisskin/android_device_amazon_omap4-common" remote="cmdev" revision="cm-11.0" />
+    <!-- jem -->
+    <project path="device/amazon/bowser-common" name="loosethisskin/android_device_amazon_bowser-common" remote="cmdev" revision="omni-4.4" />
+    <project path="device/amazon/jem" name="loosethisskin/android_device_amazon_jem" remote="cmdev" revision="omni-4.4" />
+    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="cm-11.0" />
+    <!-- otter -->
+    <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="omni-4.4" />
+    <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="omni-4.4" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="omni-4.4" />
+    <!-- amazon vendor -->
+    <project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" remote="github" revision="cm-11.0" />
+
+    <!-- custom -->
+    <remove-project name="android_vendor_omni" />
+    <project path="vendor/omni" name="loosethisskin/android_vendor_omni" remote="cmdev" revision="omni-4.4" />
+
+    <remove-project name="android_frameworks_av" />
+    <remove-project name="android_frameworks_base" />
+    <remove-project name="android_hardware_libhardware_legacy" />
+    <remove-project name="android_hardware_ti_omap4xxx" />
+    <remove-project name="android_system_core" />
+    <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="omni-4.4" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="omni-4.4" />
+    <project path="hardware/libhardware_legacy" name="loosethisskin/android_hardware_libhardware_legacy" remote="cmdev" revision="omni-4.4" />
+    <project path="hardware/ti/omap4xxx" name="loosethisskin/android_hardware_ti_omap4xxx" remote="cmdev" revision="omni-4.4" />
+    <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="omni-4.4" />
+
+    <!-- see http://review.cyanogenmod.org/#/c/54563/
+    <remove-project name="android_frameworks_native" />
+    <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="omni-4.4" /> -->
+
+    <!-- use CM's android_hardware_ti_wlan -->
+    <remove-project name="platform/hardware/ti/wlan" />
+    <project path="hardware/ti/wlan" name="loosethisskin/android_hardware_ti_wlan" remote="cmdev" revision="omni-4.4" /> <!-- is cm-11.0 -->
+
+    <!--
+    <remove-project name="android_frameworks_native" />
+    <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="omni-4.4" />
+    -->
+
+</manifest>
