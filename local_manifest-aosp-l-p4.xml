@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- replace "git://cmdev/" with "git://github.com/" to use my repos on github -->
+    <remote fetch="git://cmdev/" name="cmdev" />
+
+    <!-- custom -->
+    <remove-project name="platform/build" />
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="l-aosp-master" />
+
+    <!-- p4 common -->
+    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-11.0-dev" />
+    <project path="device/samsung/p4-common" name="loosethisskin/android_device_samsung_p4-common" remote="cmdev" revision="l-aosp-master" />
+    <!-- p4 devices -->
+    <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="cm-11.0" />
+    <project path="vendor/samsung/p4" name="loosethisskin/android_vendor_samsung_p4" remote="cmdev" revision="cm-11.0" />
+    <project path="device/samsung/p4wifi" name="loosethisskin/android_device_samsung_p4wifi" remote="cmdev" revision="l-aosp-master" />
+    <project path="vendor/samsung/p4wifi" name="loosethisskin/android_vendor_samsung_p4wifi" remote="cmdev" revision="cm-11.0" />
+
+    <remove-project name="platform/bionic" />
+    <remove-project name="platform/external/skia" />
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/hardware/libhardware" />
+    <remove-project name="platform/hardware/libhardware_legacy" />
+    <remove-project name="platform/system/core" />
+    <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="test-aosp" />
+    <project path="external/skia" name="loosethisskin/android_external_skia" remote="cmdev" revision="l-aosp-master" />
+    <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="l-aosp-master" />
+    <project path="hardware/libhardware" name="loosethisskin/android_hardware_libhardware" remote="cmdev" revision="l-aosp-master" />
+    <project path="hardware/libhardware_legacy" name="loosethisskin/android_hardware_libhardware_legacy" remote="cmdev" revision="l-aosp-master" />
+    <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="l-aosp-master" />
+
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/system/netd" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="l-aosp-master" />
+    <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="l-aosp-master" />
+    <project path="system/netd" name="loosethisskin/android_system_netd" remote="cmdev" revision="l-aosp-master" />
+
+    <!-- recovery -->
+    <remove-project name="platform/bootable/recovery" />
+    <project path="bootable/recovery" name="loosethisskin/android_bootable_recovery" remote="cmdev" revision="l-aosp-master" />
+    <!-- projects removed to keep size of recovery below 5MB
+    <remove-project name="CyanogenMod/android_external_libtar" />
+    <remove-project name="CyanogenMod/android_external_exfat" />
+    <remove-project name="CyanogenMod/android_system_vold" /> -->
+
+</manifest>

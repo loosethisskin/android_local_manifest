@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- replace "git://cmdev/" with "git://github.com/" to use my repos on github -->
+    <remote fetch="git://cmdev/" name="cmdev" />
+
+    <!-- custom -->
+    <remove-project name="android_build" />
+    <remove-project name="android_vendor_omni" />
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="android-4.4" />
+    <project path="vendor/omni" name="loosethisskin/android_vendor_omni" remote="cmdev" revision="android-4.4" />
+
+    <!-- p4 -->
+    <!-- twrp | cm-11.0-exp -->
+    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="twrp" />
+    <!-- android-4.4 | android-4.4-f2fs -->
+    <project path="device/samsung/p4-common" name="loosethisskin/android_device_samsung_p4-common" remote="cmdev" revision="android-4.4" />
+    <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="android-4.4" />
+    <project path="device/samsung/p4wifi" name="loosethisskin/android_device_samsung_p4wifi" remote="cmdev" revision="android-4.4" />
+    <project path="vendor/samsung/p4" name="loosethisskin/android_vendor_samsung_p4" remote="cmdev" revision="cm-11.0" />
+    <project path="vendor/samsung/p4wifi" name="loosethisskin/android_vendor_samsung_p4wifi" remote="cmdev" revision="cm-11.0" />
+
+    <remove-project name="android_frameworks_base" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="android-4.4" />
+
+    <remove-project name="android_bionic" />
+    <remove-project name="android_frameworks_av" />
+    <remove-project name="android_hardware_libhardware" />
+    <remove-project name="android_hardware_libhardware_legacy" />
+    <remove-project name="android_system_core" />
+    <project path="bionic" name="loosethisskin/android_bionic" remote="cmdev" revision="android-4.4" />
+    <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="android-4.4" />
+    <project path="hardware/libhardware" name="loosethisskin/android_hardware_libhardware" remote="cmdev" revision="android-4.4" />
+    <project path="hardware/libhardware_legacy" name="loosethisskin/android_hardware_libhardware_legacy" remote="cmdev" revision="android-4.4" />   
+    <project path="system/core" name="loosethisskin/android_system_core" remote="cmdev" revision="android-4.4" />
+
+<!--
+    <remove-project name="android_external_skia" />
+    <project path="external/skia" name="loosethisskin/android_external_skia" remote="cmdev" revision="android-4.4" />
+    <remove-project name="CyanogenMod/android_external_chromium_org" />
+    <project path="external/chromium_org" name="loosethisskin/android_external_chromium_org" remote="cmdev" revision="cm-11.0" />
+-->
+
+    <!-- recovery - Note: no need to remove any projects to keep size below 5M -->
+    <remove-project name="android_bootable_recovery" />
+    <project path="bootable/recovery" name="loosethisskin/android_bootable_recovery" remote="cmdev" revision="twrp-android-4.4" />
+    <!-- remove exfat for p4 recovery
+    <remove-project name="android_external_exfat" /> -->
+
+</manifest>

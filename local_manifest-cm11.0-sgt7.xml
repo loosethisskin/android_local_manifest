@@ -9,11 +9,12 @@
     <!-- jem -->
     <project path="device/amazon/bowser-common" name="loosethisskin/android_device_amazon_bowser-common" remote="cmdev" revision="cm-11.0" />
     <project path="device/amazon/jem" name="loosethisskin/android_device_amazon_jem" remote="cmdev" revision="cm-11.0" />
-    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="cm-11.0" />
+    <project path="kernel/amazon/bowser-common" name="loosethisskin/kernel_omap_bowser-common" remote="cmdev" revision="cm-11.0-dev" />
     <!-- otter -->
     <project path="device/amazon/otter" name="loosethisskin/android_device_amazon_otter" remote="cmdev" revision="cm-11.0" />
+    <project path="device/amazon/otterx" name="loosethisskin/android_device_amazon_otterx" remote="cmdev" revision="cm-11.0" />
     <project path="device/amazon/otter-common" name="loosethisskin/android_device_amazon_otter-common" remote="cmdev" revision="cm-11.0" />
-    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-11.0" />
+    <project path="kernel/amazon/otter-common" name="loosethisskin/kernel_omap_otter-common" remote="cmdev" revision="cm-11.0-dev" />
     <!-- amazon vendor -->
     <project path="vendor/amazon" name="TheMuppets/proprietary_vendor_amazon" revision="cm-11.0" />
 
@@ -23,29 +24,29 @@
     <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-11.0" />
     <project path="vendor/cm" name="loosethisskin/android_vendor_cm" remote="cmdev" revision="cm-11.0" />
 
+    <!-- sgt7 -->
     <remove-project name="CyanogenMod/android_frameworks_base" />
-    <remove-project name="CyanogenMod/android_frameworks_native" />
-    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-11.0-jem-rotation" />
-    <project path="frameworks/native" name="loosethisskin/android_frameworks_native" remote="cmdev" revision="cm-11.0" />
+    <remove-project name="CyanogenMod/android_packages_apps_Settings" />
+    <project path="frameworks/base" name="loosethisskin/android_frameworks_base" remote="cmdev" revision="cm-11.0" />
+    <project path="packages/apps/Settings" name="loosethisskin/android_packages_apps_Settings" remote="cmdev" revision="cm-11.0" />
 
-    <project path="packages/apps/Trebuchet" name="sgt7/android_packages_apps_Trebuchet" revision="cm-11.0" />
+    <!-- toolchains -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="JustArchi/Linaro" remote="github" revision="4.8-eabi" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="JustArchi/Linaro" remote="github" revision="4.8-androideabi" />
 
-    <!-- p4 -->
-    <project path="device/samsung/p4" name="loosethisskin/android_device_samsung_p4" remote="cmdev" revision="cm-10.2" />
-    <project path="device/samsung/p4-common" name="loosethisskin/android_device_samsung_p4-common" remote="cmdev" revision="cm-11.0" />
-    <project path="device/samsung/p4wifi" name="loosethisskin/android_device_samsung_p4wifi" remote="cmdev" revision="cm-11.0" />
-    <project path="kernel/samsung/p4" name="loosethisskin/android_kernel_samsung_p4" remote="cmdev" revision="cm-11.0" />
-    <project path="vendor/samsung/p4" name="loosethisskin/android_vendor_samsung_p4" remote="cmdev" revision="cm-10.2" />
-    <project path="vendor/samsung/p4wifi" name="loosethisskin/android_vendor_samsung_p4wifi" remote="cmdev" revision="cm-11.0" />
-    <!-- p4 other
-    <remove-project name="CyanogenMod/android_hardware_libhardware" />
-    <remove-project name="CyanogenMod/android_frameworks_av" />
-    <project path="hardware/libhardware" name="loosethisskin/android_hardware_libhardware" remote="cmdev" revision="cm-11.0" />   
-    <project path="frameworks/av" name="loosethisskin/android_frameworks_av" remote="cmdev" revision="cm-11.0" /> -->
+    <!--
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"  remote="aosp" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="aosp" revision="master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="JustArchi/Linaro" remote="github" revision="4.9-eabi" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="JustArchi/Linaro" remote="github" revision="4.9-androideabi-fixed-icons" />
+    -->
 
-    <!-- other -->
-    <remove-project name="CyanogenMod/android_packages_apps_CMAccount" />
-
-<!--<project path="external/wpa_supplicant_8_ti" name="CyanogenMod/android_external_wpa_supplicant_8_ti" revision="cm-10.2" />-->
+    <!-- linaro
+    <remove-project name="loosethisskin/android_build" />
+    <project path="build" name="loosethisskin/android_build" remote="cmdev" revision="cm-11.0-linaro" />
+    <remove-project name="CyanogenMod/android_art"/>
+    <remove-project name="CyanogenMod/android_external_fuse"/>
+    <project path="art" name="loosethisskin/android_art" remote="cmdev" revision="cm-11.0-linaro" />
+    <project path="external/fuse" name="loosethisskin/android_external_fuse" remote="cmdev" revision="cm-11.0-linaro" /> -->
 
 </manifest>
